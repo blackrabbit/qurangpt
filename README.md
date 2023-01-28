@@ -1,4 +1,4 @@
-!(logo)(https://github.com/blackrabbit/qurangpt/blob/main/docs/logo.png?raw=true)
+![logo](https://github.com/blackrabbit/qurangpt/blob/main/docs/logo.png?raw=true)
 
 # QuranGPT
 
