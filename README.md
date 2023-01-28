@@ -1,3 +1,5 @@
+!(logo)(https://github.com/blackrabbit/qurangpt/blob/main/docs/logo.png?raw=true)
+
 # QuranGPT
 
 This is a text embedding model using the OpenAI API to generate an embedding and then use it to do a semantic search through the quran.
