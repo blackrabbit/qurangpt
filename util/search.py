@@ -8,8 +8,7 @@ datafile_path = "data/quran_english_rolling_window_size_3_with_embeddings.csv"
 df = pd.read_csv(datafile_path)
 df["embedding"] = df.embedding.apply(eval).apply(np.array)
 
-# search through the reviews for a specific product
-def search(df, query, n=3, pprint=True):
+def search(df, query, n=3):
     query_embedding = get_embedding(
         query,
         engine="text-embedding-ada-002"
@@ -23,6 +22,6 @@ def search(df, query, n=3, pprint=True):
     return results
 
 
-results = search(df, "is jesus viewed favorably in islam", n=3)
+results = search(df, "is alcohol forbidden to drink", n=3)
 for ayat in results.EnglishGroupAyats:
     print(ayat)

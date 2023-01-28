@@ -9,7 +9,7 @@ embedding_model = "text-embedding-ada-002"
 embedding_encoding = "cl100k_base"
 max_tokens = 8191  
 
-input_datapath = "data/quran_english.csv" 
+input_datapath = "../data/quran_english.csv" 
 df = pd.read_csv(input_datapath)
 print(df.columns)
 df = df[["SrNo", "JuzNo", "SurahNo", "AyahNo", "EnglishTranslation"]]
