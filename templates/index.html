@@ -63,14 +63,33 @@
         color:white;
         text-decoration:none;
     }
+
+    .ayat-card {
+        background-color: #fdfdfd;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 20px;
+    }
     </style>
   </head>
   <body>
     <script>
+        $(document).keypress(function(e){
+            if (e.which == 13){
+                $(".search_icon").click();
+            }
+        });
+
         function search() {
             fetch(`/search?q=${document.getElementById('search_input').value}`)
             .then((response) => response.json())
-            .then((data) => document.getElementById('results').innerText = data);
+            .then((data) => {
+                let newHtml = '';
+                for (let datum of data) {
+                    newHtml+= '<div class="ayat-card">' + datum.replaceAll('# ', '<br/>').replaceAll(' #', '<br/>').replaceAll('#', '') + '</div>'
+                }
+                results.innerHTML = newHtml;
+            });
         }
     </script>
     <div class="container h-100">
