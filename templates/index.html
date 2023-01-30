@@ -34,7 +34,7 @@
         border: 0;
         outline: 0;
         background: none;
-        width: 450px;
+        width: 400px;
         caret-color:transparent;
         line-height: 40px;
         padding: 0 10px;
@@ -42,7 +42,6 @@
 
     .searchbar:hover > .search_input{
         padding: 0 10px;
-        width: 450px;
         caret-color:red;
         transition: width 0.4s linear;
     }
@@ -70,6 +69,21 @@
         margin: 10px;
         padding: 20px;
     }
+
+    .footer {
+        text-align: center;
+        font-size: 10px;
+        margin-top: 25px;
+    }
+
+    .contain-app {
+        margin-top: 50px;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+    h1 {
+        margin-bottom: 25px;
+    }
     </style>
   </head>
   <body>
@@ -94,13 +108,16 @@
     </script>
     <div class="container h-100">
       <div class="d-flex justify-content-center h-100">
-        <div>
+        <div class="contain-app">
             <h1>Quran GPT</h1>
             <div class="searchbar">
                 <input id="search_input" class="search_input" type="text" name="" placeholder="Search">
                 <button onclick="search()" class="search_icon"><i class="fas fa-search"></i></button>
             </div>
             <div id="results">
+            </div>
+            <div class="footer">
+                complaints to <a href="https://www.twitter.com/blackrabbit">blackrabbit</a>
             </div>
         </div>
       </div>
