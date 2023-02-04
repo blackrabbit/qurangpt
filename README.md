@@ -6,7 +6,7 @@ This is a text embedding model using the OpenAI API to generate an embedding and
 
 The original source of the English translation of the quran can be downloaded from [here](https://drive.google.com/file/d/13gCvW0hHyQGvYSqXP71pgD2LNOvtb8Gi/view?usp=sharing).
 
-It is deployed at http://qurangpt.dev
+It is deployed at https://qurangpt.dev
 
 
 ## Run
